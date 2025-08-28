@@ -1,0 +1,10 @@
+APT29 S-APT
+used O
+Cobalt B-TOOL
+Strike E-TOOL
+on O
+192.168.0.1 S-IP
+and O
+dropped O
+malware.exe S-FILE
+
