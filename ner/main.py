@@ -40,7 +40,7 @@ token_schema = types.Schema(
     required=["token","label"]
 )
 
-# Wrap in an array schema
+
 schema = types.Schema(type="array", items=token_schema)
 
 # Initialize client
