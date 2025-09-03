@@ -176,5 +176,9 @@ async def federated_lookup(indicator: str, summarize: bool = Query(False, descri
     return result
 
 
+@app.get('/')
+def root():
+    return {"message": "Welcome to the Federated CTI Hub"}
+
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=5000)
