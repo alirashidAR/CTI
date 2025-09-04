@@ -68,7 +68,7 @@ with open("ner_dataset.txt", "w") as f:
 
 
 async def summary(ioc_context: str):
-    prompt = f"Summarize the following IOC context:\n\n{ioc_context}"
+    prompt = f"Summarize the following IOC context, response should be a concise summary:\n\n{ioc_context}"
     response = client.models.generate_content(
         model="gemini-2.5-flash",
         contents=prompt,
